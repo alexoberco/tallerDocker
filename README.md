@@ -15,7 +15,7 @@ Este proyecto levanta dos contenedores Docker (PostgreSQL y Adminer) para gestio
 - [Scripts Disponibles](#scripts-disponibles)
 - [Acceso a Adminer](#acceso-a-adminer)
 
-<a name="vision-general"></a>
+<a name="visión-general"></a>
 ## 🌟 Visión General
 
 Este proyecto utiliza **Docker Compose** para orquestar contenedores. Se ofrecen tres alternativas para levantar los servicios:
