@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:latest
+    container_name: db_container
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: baseTaller
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - network
+
+volumes:
+  pgdata:
+
+networks:
+  network:
+    external: true

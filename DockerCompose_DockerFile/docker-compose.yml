@@ -1,0 +1,34 @@
+version: '3.1'
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+    container_name: db_container
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: baseTaller
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - network
+
+  adminer:
+    build:
+      context: .
+      dockerfile: Dockerfile-adminer
+    container_name: adminer_container
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - network
+
+volumes:
+  pgdata:
+
+networks:
+  network:
+    external: true

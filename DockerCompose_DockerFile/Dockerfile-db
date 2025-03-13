@@ -1,0 +1,7 @@
+# Dockerfile-db
+FROM postgres:latest
+ENV POSTGRES_USER=admin
+ENV POSTGRES_PASSWORD=admin
+ENV POSTGRES_DB=baseTaller
+# Define el volumen para persistir los datos
+VOLUME /var/lib/postgresql/data

@@ -1,0 +1,2 @@
+# Dockerfile-adminer
+FROM adminer:latest
