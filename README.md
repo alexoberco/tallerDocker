@@ -6,9 +6,9 @@ Este proyecto levanta dos contenedores Docker (PostgreSQL y Adminer) para gestio
 
 ## 📑 Tabla de Contenidos
 
-- [Visión General](##visión-general)
-- [Requisitos](##requisitos)
-- [Configuración Inicial](##configuración-inicial)
+- [Visión General](visión-general)
+- [Requisitos](requisitos)
+- [Configuración Inicial](configuración-inicial)
 - [Uso](##uso)
   - [Ejecutar con Scripts Shell (Linux/macOS)](#ejecutar-con-scripts-shell-linuxmacos)
   - [Ejecutar con Scripts Batch (Windows)](#ejecutar-con-scripts-batch-windows)
