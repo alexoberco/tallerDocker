@@ -6,16 +6,16 @@ Este proyecto levanta dos contenedores Docker (PostgreSQL y Adminer) para gestio
 
 ## 📑 Tabla de Contenidos
 
-- [Visión General](visión-general)
-- [Requisitos](requisitos)
-- [Configuración Inicial](configuración-inicial)
-- [Uso](##uso)
+- [Visión General](#visión-general)
+- [Requisitos](#requisitos)
+- [Configuración Inicial](#configuración-inicial)
+- [Uso](#uso)
   - [Ejecutar con Scripts Shell (Linux/macOS)](#ejecutar-con-scripts-shell-linuxmacos)
   - [Ejecutar con Scripts Batch (Windows)](#ejecutar-con-scripts-batch-windows)
-- [Scripts Disponibles](##scripts-disponibles)
-- [Acceso a Adminer](##acceso-a-adminer)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Acceso a Adminer](#acceso-a-adminer)
 
-
+<a name="vision-general"></a>
 ## 🌟 Visión General
 
 Este proyecto utiliza **Docker Compose** para orquestar contenedores. Se ofrecen tres alternativas para levantar los servicios:
@@ -26,12 +26,14 @@ Este proyecto utiliza **Docker Compose** para orquestar contenedores. Se ofrecen
 
 Además, se incluyen scripts tanto para entornos Linux/macOS (`.sh`) como para Windows (`.bat`).
 
+<a name="requisitos"></a>
 ## 🔧 Requisitos
 
 - [Docker Engine ](https://docs.docker.com/engine/) o Docker Desktop instalado.
 - Docker Compose (incluido en Docker Desktop o instalado por separado).
 - (Opcional) Git Bash, Cygwin o WSL para ejecutar scripts `.sh` en Windows.
 
+<a name="configuración-inicial"></a>
 ## 🛠 Configuración Inicial
 
 Primero, crea una red externa para que los contenedores puedan comunicarse:
@@ -42,6 +44,7 @@ docker network create mynetwork
 
 Esta red se usará en cada método de ejecución para conectar la base de datos y Adminer.
 
+<a name="uso"></a>
 ## 💻 Uso
 
 ### Ejecutar con Scripts Shell (Linux/macOS)
@@ -89,6 +92,7 @@ run_compose_with_dockerfiles.bat
 run_dockerfiles_manually.bat
 ```
 
+<a name="scripts-disponibles"></a>
 ## 📜 Scripts Disponibles
 
 - **Shell Scripts (Linux/macOS):**
@@ -101,6 +105,7 @@ run_dockerfiles_manually.bat
   - `run_compose_with_dockerfiles.bat`: Ejecuta el archivo compose único que construye las imágenes.
   - `run_dockerfiles_manually.bat`: Construye y ejecuta los contenedores manualmente desde los Dockerfiles.
 
+<a name="acceso-a-adminer"></a>
 ## 🔑 Acceso a Adminer
 
 Una vez que los contenedores estén en ejecución, abre tu navegador y visita:
